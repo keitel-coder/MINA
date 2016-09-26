@@ -1,0 +1,201 @@
+/**index.wxss**/
+.container {
+  background-color: #F2f2f2;
+}
+
+.head{
+  display: flex;
+  height: 47px;
+  align-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+
+.head .logo{
+  height: 34px;
+  width: 168px;
+  float: left;
+}
+
+.head .btn-area{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-items:center;
+  height: 100%;
+}
+
+view.section {
+  /*display: block;*/
+  /*width: 100%;*/
+}
+
+/*轮播*/
+.swiper_box {
+  /*width: 100%;*/
+  height: 187.5px;
+}
+swiper.swiper {
+  height: 100%;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+
+/*分类*/
+.index-nav {
+  height: 20px;
+  /*background: red;*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  background-color: #fff;
+  color: #646464;
+  flex-wrap: nowrap;
+}
+
+.index-nav view {
+  display: inline;
+  /*flex: 1;*/
+  /*flex-direction: column;*/
+  border-right: 1px solid #F2f2f2;
+}
+
+.index-nav text {
+  font-size: 16px;
+  padding: 0 10px 0 10px;
+}
+
+view.text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px 10px 12px;
+  font-size: 15px;
+  color: #656565;
+}
+
+view.text:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #09bb07;
+}
+.line_y {
+  width: 3px;
+  /*height: 100%;
+  height: 18px;*/
+  display: inline-block;
+  background-color: #09bb07;
+}
+
+view.text text {
+  margin-left: 10px;
+  line-height: 18px;
+}
+
+.slide-image {
+  /*height: 100%;
+  width: 100%;*/
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-text{
+  display: inline;
+  /*height: 20px;*/
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  color: white;
+}
+
+.chooise {
+  height: 90px;
+  display: flex;
+  background: #f3f4f5;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #e7e9ea;
+  padding: 5px;
+}
+
+.chooise .left{
+  height:  100%;
+  width: 160px;
+  margin:0 10px 0 5px;
+  position: relative;
+  flex-grow:1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chooise .left .top{
+  width: 100%;
+  flex-grow:1;
+}
+
+.chooise .left .top text{
+  font-size: 18px;
+}
+
+.chooise .left .bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+}
+
+.chooise .author{
+    flex-grow:1;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.chooise .project{
+     font-size: 10px;
+     color: #8c9196;
+     /*background: red;*/
+     /*padding: 3px;*/
+     border: 2px solid #e6e8e8;
+     border-radius: 7px;
+}
+
+.chooise .author image{
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.chooise .author text{
+  font-size: 10px;
+  color: #8c9196;
+}
+
+.chooise .right{
+  height:  100%;
+  width: 120px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  justify-content:center;
+}
+
+.chooise .right image{
+  height:  90px;
+  width: 120px;
+  /*margin: 5px;*/
+  position: relative;
+  overflow: hidden;
+}

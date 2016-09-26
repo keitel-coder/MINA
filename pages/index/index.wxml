@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head">
+    <image class="logo" src="http://m.szhome.com/Content/images/szhomebbs_logo.jpg"></image>
+    <!--<view class="btn-area">
+        <navigator url="navigate?title=navigate" hover-class="navigator-hover">搜索</navigator>
+        <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">扫一扫</navigator>
+        <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">搜索</navigator>
+    </view>-->
+    </view>
+
+    <!--选择板块-->
+ <scroll-view class="scroll-view_H index-nav" scroll-x="true">
+    <block wx:for-items="{{indexTypes}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <text>{{item}}</text>
+            </view>
+        </block>
+ </scroll-view>
+    <!--轮播-->
+    <view class="section section_gap swiper_box">
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for-items="{{slides}}">
+                <swiper-item>
+                   <image src="{{item.ImageUrl}}" class="slide-image"/>
+                   <text class="slide-text">{{item.Title}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+  
+    <block wx:for-items="{{chooises}}">
+        <view class="chooise">
+            <view class="left">
+                <view class="top">
+                    <text>{{item.Title}}</text>
+                </view>
+                 <view class="bottom">
+                    <view class="author">
+                        <image src="/image/person.ico"></image>
+                        <text>{{item.UserName}}</text>
+                    </view>
+                    <view class="project">
+                        <text>{{item.ProjectName}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="right">
+                <image src="{{item.ImageUrlList[0]}}"></image>
+            </view>
+        </view>
+    </block>
+</view>
